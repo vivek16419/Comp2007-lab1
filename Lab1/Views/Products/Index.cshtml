@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "COMP2007 - Lab 1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List of products</h2>
+
+<ul>
+    <li>@Html.ActionLink("Laptop","Details","Products", new { type= "Laptop" }, null)</li>
+    <li>@Html.ActionLink("Tablet","Details","Products", new { type = "Tablet" }, null)</li>
+    <li>@Html.ActionLink("Desktop", "Details", "Products", new { type = "Desktop" }, null)</li>
+</ul>
+
